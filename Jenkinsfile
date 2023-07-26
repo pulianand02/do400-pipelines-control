@@ -10,8 +10,6 @@ pipeline {
 				sh 'node ./backend/test.js'
 			}
 		}
-	}
-	stages {
 		stage('Frontend Tests') {
 			steps {
 				sh 'node ./frontend/test.js'
